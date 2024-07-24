@@ -1,0 +1,14 @@
+** comandos para crear repositorio en github y asociarlo a repositorio local
+
+* si ya tenemos el repositorio local
+git branch -m main
+git remote add origin https://github.com/{username}/{reponame}.git
+git push -u origin main
+
+* si no tenemos el repositorio local y queremos crearlo
+git init
+git add .
+git commit -m "inicializando repositorio"
+git branch -m main
+git remote add origin https://github.com/{username}/{reponame}.git
+git push -u origin main
